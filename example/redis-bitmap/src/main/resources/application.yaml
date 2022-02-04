@@ -1,0 +1,8 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /redis-bitmap
+spring:
+  redis:
+    host: 47.111.248.7
+

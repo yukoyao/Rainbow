@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>example</artifactId>
+    <groupId>top.yuko</groupId>
+    <version>JGITVER</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>redis-bitmap</artifactId>
+
+  <properties>
+    <jedis.version>3.3.0</jedis.version>
+  </properties>
+
+  <dependencies>
+
+    <!-- SpringBoot 启动组件 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <!-- SpringBoot 测试组件 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+
+    <!-- SpringBoot Web 组件 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- SpringBoot 提供的操作 redis 的 api 组件，自带 redis 客户端 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+
+      <!-- 排除自带的 redis 客户端 lettuce -->
+      <exclusions>
+        <exclusion>
+          <groupId>io.lettuce</groupId>
+          <artifactId>lettuce-core</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- redis 客户端 jedis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+
+  </dependencies>
+
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- SpringBoot的依赖配置-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.2.13.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>
