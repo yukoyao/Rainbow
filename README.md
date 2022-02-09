@@ -23,3 +23,4 @@ Rainbow
 
 * Redis
   * 使用 Redis BitMap 实现签到功能
+  * 使用 Redis HyperLogLog 实现 PV、UV、DAU、MAU 指标采集和展示
