@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>redis-bitmap</artifactId>
+  <artifactId>redis-HyperLogLog</artifactId>
 
   <properties>
     <jedis.version>3.3.0</jedis.version>
@@ -62,6 +62,7 @@
       <artifactId>hutool-all</artifactId>
       <version>5.7.15</version>
     </dependency>
+
   </dependencies>
 
 

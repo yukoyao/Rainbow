@@ -1,0 +1,8 @@
+server:
+  port: 9003
+  servlet:
+    context-path: /redis-geo
+spring:
+  redis:
+    host: 192.168.110.100
+
