@@ -1,4 +1,4 @@
-#### 使用 Redis GEO 实现附近商家
+### 使用 Redis GEO 实现附近商家
 
 ##### GeoHash 核心原理解析
 

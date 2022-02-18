@@ -1,4 +1,4 @@
-#### 使用 redis HyperLogLog 数据结构实现 UV 指标采集和展示
+### 使用 redis HyperLogLog 数据结构实现 UV 指标采集和展示
 
 ##### 什么是 HyperLogLog ?
 
