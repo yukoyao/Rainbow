@@ -24,6 +24,7 @@ Rainbow
 
 * [Docker 简介和安装](https://github.com/Yaoyukang1017/Rainbow/blob/main/doc/docker/Docker%20%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85.md)
 * [Docker 目录挂载和多容器间通信](https://github.com/Yaoyukang1017/Rainbow/blob/main/doc/docker/Docker%20%E7%9B%AE%E5%BD%95%E6%8C%82%E8%BD%BD%E5%92%8C%E5%A4%9A%E5%AE%B9%E5%99%A8%E9%97%B4%E9%80%9A%E4%BF%A1.md)
+* [Docker 制作精简镜像]()
 * [Docker 在 Spring Boot Java App 上实现持续集成/持续交付](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/springboot-cicd/README.md)
 
 > 项目实战部分
@@ -34,4 +35,4 @@ Rainbow
     * [使用 Redis GEO 实现附近商家](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/redis-geo/README.md)
     * [布隆过滤器的使用](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/redis-bloomFilter/README.md)
     * [定时批量数据的上下架(解决缓存击穿问题)](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/redis-cache-breakdown/README.md)
-    * [分布式解决抢购问题](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/redis-distributedLock/README.md)
+    * [分布式锁解决抢购问题](https://github.com/Yaoyukang1017/Rainbow/blob/main/example/redis-distributedLock/README.md)
