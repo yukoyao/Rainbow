@@ -1,7 +1,7 @@
 server:
   port: 9005
   servlet:
-    context-path: redis-cache-breakdown
+    context-path: /redis-cache-breakdown
 
 
 spring:
@@ -9,3 +9,12 @@ spring:
     enabled: true
   redis:
     host: 192.168.110.100
+    timeout: 3000   # 连接语句
+    lettuce:
+      pool:
+        max-active: 20   # 最大连接数
+        min-idle: 5      # 最小空闲
+        max-wait: 5000ms # 连接超时
+        max-idle: 20     # 最大空闲
+
+

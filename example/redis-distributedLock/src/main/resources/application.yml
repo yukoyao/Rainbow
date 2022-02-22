@@ -1,0 +1,17 @@
+server:
+  port: 9006
+  servlet:
+    context-path: /redis-distributedLock
+
+spring:
+  redis:
+    host: 192.168.110.100
+    database: 0
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 8 # 最大连接数
+        max-wait: -1  # 最大阻塞等待时间 (使用负值表示没有限制)
+        max-idle: 8   # 最大空闲连接
+        min-idle: 0   # 最小空闲连接
+

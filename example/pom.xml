@@ -18,6 +18,7 @@
       <module>redis-bloomFilter</module>
       <module>redis-cache-breakdown</module>
       <module>springboot-cicd</module>
+      <module>redis-distributedLock</module>
   </modules>
 
 </project>
