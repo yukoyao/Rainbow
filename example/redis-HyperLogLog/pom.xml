@@ -68,7 +68,6 @@
 
   <dependencyManagement>
     <dependencies>
-
       <!-- SpringBoot的依赖配置-->
       <dependency>
         <groupId>org.springframework.boot</groupId>

@@ -19,6 +19,8 @@
       <module>redis-cache-breakdown</module>
       <module>springboot-cicd</module>
       <module>redis-distributedLock</module>
+      <module>springboot-redisson-configuration</module>
+      <module>redis-multi-master</module>
   </modules>
 
 </project>

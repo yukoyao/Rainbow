@@ -1,0 +1,47 @@
+spring:
+  redis:
+    host: 192.168.110.100
+    port: 6379
+    database: 0
+    timeout: 10s
+    ssl: false
+
+
+# redisson 客户端配置
+redisson:
+  # 线程池数量
+  threads: 16
+  # Netty 线程池数量
+  nettyThreads: 32
+  # 传输模式
+  transportMode: "NIO"
+  # 单节点配置
+  masterSlaveServersConfig:
+    idleConnectionTimeout: 10000
+    connectTimeout: 10000
+    timeout: 3000
+    retryAttempts: 3
+    retryInterval: 1500
+    failedAttempts: 3
+    password: null
+    subscriptionsPerConnection: 5
+    clientName: redis-master-slave
+    loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> { }
+    slaveSubscriptionConnectionMinimumIdleSize: 1
+    slaveSubscriptionConnectionPoolSize: 50
+    slaveConnectionMinimumIdleSize: 32
+    slaveConnectionPoolSize: 64
+    masterConnectionMinimumIdleSize: 32
+    masterConnectionPoolSize: 64
+    readMode: "SLAVE"
+    slaveAddresses:
+      - "redis://127.0.0.1:6381"
+      - "redis://127.0.0.1:6380"
+    masterAddress: "redis://127.0.0.1:6379"
+    database: 0
+    threads: 0
+    nettyThreads: 0
+
+
+
+
