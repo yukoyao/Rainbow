@@ -29,7 +29,11 @@ Rainbow
 
 > Redis
 
-* [Redis 过期策略&内存淘汰策略]()
+* [Redis 过期策略&内存淘汰策略](https://github.com/Yaoyukang1017/Rainbow/blob/main/doc/redis/Redis%20%E8%BF%87%E6%9C%9F%E7%AD%96%E7%95%A5%26%E5%86%85%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AD%96%E7%95%A5.md)
+
+> JVM
+
+* [JVM 加载机制和双亲委派机制]()
 
 > 项目实战部分
 
