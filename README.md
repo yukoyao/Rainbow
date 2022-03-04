@@ -34,6 +34,7 @@ Rainbow
 > JVM
 
 * [JVM 加载机制和双亲委派机制](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%92%8C%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.md)
+* [JVM 内存模型剖析及优化]()
 
 > 项目实战部分
 
