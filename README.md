@@ -2,6 +2,13 @@
 
 厚积薄发
 
+#### 学习方法总结
+
+1. 切勿囫囵吞枣，需要学习之后自己总结，定期删改之前的学习总结，巩固之前的学习。
+2. 带着问题去学习思考。
+
+
+
 #### 目录
 
 ```
@@ -36,7 +43,8 @@ Rainbow
 * [JVM 加载机制和双亲委派机制](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6%E5%92%8C%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.md)
 * [JVM 内存模型剖析及优化](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E5%89%96%E6%9E%90%E5%8F%8A%E4%BC%98%E5%8C%96.md)
 * [JVM 对象创建与内存分配机制](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%9C%BA%E5%88%B6.md) - 未完成
-* [垃圾收集算法与垃圾收集器ParNew&CMS]()
+* [垃圾收集算法与垃圾收集器ParNew&CMS](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95%E4%B8%8E%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8ParNew%26CMS.md)
+* [垃圾收集器G1和ZVC]() - 未完成
 
 ##### 业务数据表结构设计
 
@@ -52,6 +60,7 @@ Rainbow
     * [定时批量数据的上下架(解决缓存击穿问题)](https://github.com/yukoyao/Rainbow/blob/main/example/redis-cache-breakdown/README.md)
     * [分布式锁解决抢购问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-distributedLock/README.md)
     * [使用 redisson 解决锁丢失问题和缓存续期问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-multi-master/README.md) 
+    * [Mysql 和 Redis 的数据一致性问题]()
 
 * Redisson
   * [springboot 2.x 集成 redisson(多种模式配置)](https://github.com/yukoyao/Rainbow/blob/main/example/springboot-redisson-configuration/README.md)
