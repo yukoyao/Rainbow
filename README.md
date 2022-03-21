@@ -65,3 +65,5 @@ Rainbow
 * Redisson
   * [springboot 2.x 集成 redisson(多种模式配置)](https://github.com/yukoyao/Rainbow/blob/main/example/springboot-redisson-configuration/README.md)
 
+* J2Cache
+  * [J2Cache 整合进程内缓存和集中式缓存](https://github.com/yukoyao/Rainbow/blob/main/example/J2Cache-example/README.md)
