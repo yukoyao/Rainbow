@@ -18,7 +18,7 @@ Rainbow
 ```
 
 
-<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/36dfe996456405d3fbb5e25593bda940.png" alt="36dfe996456405d3fbb5e25593bda940.png" border="0" /><font size='5'>&nbsp;文档部分</font></div>
+<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/36dfe996456405d3fbb5e25593bda940.png" alt="36dfe996456405d3fbb5e25593bda940.png" border="0" /><font size='5'>&nbsp;&nbsp;文档部分</font></div>
 
 #####  git 部分
 
@@ -52,9 +52,7 @@ Rainbow
 * [商品相关数据库表设计]() - 未完成
 
 
-***
-
-<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/feeb6aca8218dafb6ccaf1bdb8e6c664.png" alt="feeb6aca8218dafb6ccaf1bdb8e6c664.png" border="0" /><font size='5'>&nbsp;项目实战部分</font></div>
+<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/feeb6aca8218dafb6ccaf1bdb8e6c664.png" alt="feeb6aca8218dafb6ccaf1bdb8e6c664.png" border="0" /><font size='5'>&nbsp;&nbsp;项目实战部分</font></div>
 
 * Redis
     * [使用 Redis BitMap 实现签到功能](https://github.com/yukoyao/Rainbow/blob/main/example/redis-bitmap/README.md)
@@ -72,9 +70,8 @@ Rainbow
 * J2Cache
   * [J2Cache 整合进程内缓存和集中式缓存](https://github.com/yukoyao/Rainbow/blob/main/example/J2Cache-example/README.md)
 
-***
     
-<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/dabdeda0d8ba85516f213d1c7b439bb5.png" alt="dabdeda0d8ba85516f213d1c7b439bb5.png" border="0" /><font size='5'>&nbsp;所遇棘手问题及解决过程</font></div>
+<div align='center' ><img src="http://yuko.top:9099/images/2022/03/23/dabdeda0d8ba85516f213d1c7b439bb5.png" alt="dabdeda0d8ba85516f213d1c7b439bb5.png" border="0" /><font size='5'>&nbsp;&nbsp;所遇棘手问题及解决过程</font></div>
 
 * 安全部分
   * [Spring 框架反射型下载漏洞(CVE-2020-5421) 解决思路]()
