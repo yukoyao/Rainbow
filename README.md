@@ -45,7 +45,7 @@ Rainbow
 * [JVM 内存模型剖析及优化](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E5%89%96%E6%9E%90%E5%8F%8A%E4%BC%98%E5%8C%96.md)
 * [JVM 对象创建与内存分配机制](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/JVM%20%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E4%B8%8E%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%9C%BA%E5%88%B6.md) - 未完成
 * [垃圾收集算法与垃圾收集器ParNew&CMS](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95%E4%B8%8E%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8ParNew%26CMS.md)
-* [垃圾收集器G1和ZVC]() - 未完成
+* [垃圾收集器G1](https://github.com/yukoyao/Rainbow/blob/main/doc/jvm/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8G1.md) 
 
 ##### 业务数据表结构设计
 
