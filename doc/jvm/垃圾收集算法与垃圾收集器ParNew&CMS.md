@@ -257,3 +257,4 @@ void pre_load_barrier(oop* field) {
 变脏的元素加入 GCRoots 里。
 
 
+
