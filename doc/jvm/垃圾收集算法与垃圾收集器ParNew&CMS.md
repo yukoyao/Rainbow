@@ -14,7 +14,7 @@
 为了解决效率问题，"复制"收集算法出现了。它可以将内存分为大小相同的两块，每次使用其中的一块。当这一块的内存使用后，就将还存活的对象复制到另一块去，然后
 再把使用的空间一次清理掉。
 
-![标记-复制](http://yuko.top:9099/images/2022/03/08/96D6C205961C401FA08A222DD296F101.jpg)
+![标记-复制](http://images.yuko.top/images/2022/03/08/96D6C205961C401FA08A222DD296F101.jpg)
 
 
 ### 标记-清除算法
@@ -24,7 +24,7 @@
 1. 效率问题(如果需要标记的对象太多，效率不高)
 2. 空间问题(标记清除后会产生大量不连续的碎片)
 
-![标记-清除](http://yuko.top:9099/images/2022/03/08/9EA2822391964677B532FA20BA6C1CFE.jpg)
+![标记-清除](http://images.yuko.top/images/2022/03/08/9EA2822391964677B532FA20BA6C1CFE.jpg)
 
 
 ### 标记-整理算法
@@ -32,7 +32,7 @@
 根据老年代的特点的一种标记算法，标记过程仍然与"标记-清除"算法一样，但后续步骤不是直接对可回收对象回收，而是让所有存活对象向一端移动，然后直接清理掉端
 边界以外的内存。
 
-![标记-整理](http://yuko.top:9099/images/2022/03/08/96BA7C6A2FE44EECBE32B64ADA05E03F.jpg)
+![标记-整理](http://images.yuko.top/images/2022/03/08/96BA7C6A2FE44EECBE32B64ADA05E03F.jpg)
 
 
 ## 垃圾收集器
@@ -42,7 +42,7 @@
 Serial (串行) 收集器是最基本、历史最悠久的垃圾收集器。它是一个单线程收集器，在它进行垃圾收集工作的时候必须暂停其他所有的工作线程(**Stop The World**),
 直到它收集结束。**新生代采用复制算法，老年代采用标记-整理算法。**
 
-![Serial 收集过程](http://yuko.top:9099/images/2022/03/08/1C5BBB8EFDA34D30A04C67EB39C32E43.jpg)
+![Serial 收集过程](http://images.yuko.top/images/2022/03/08/1C5BBB8EFDA34D30A04C67EB39C32E43.jpg)
 
 虽然 Serial 收集器有 STW 的不良体验，但是 Serial 收集器也有优于其他收集器的地方。**它简单而高效(与其他收集器的单线程相比)**。Serial 收集器由于
 没有线程交互的开销，自然可以获得很高的单线程收集效率。
@@ -58,7 +58,7 @@ Parallel 收集器其实是 Serial 收集器的多线程版本，除了使用多
 **Parallel Scavenge 收集器关注点是吞吐量(高效率地利用 CPU)。CMS 等垃圾收集器的关注点更多的是用户线程的停顿时间(提高用户体验)。所谓吞吐量就是
 就是 CPU 中用于运行用户代码的时间与 CPU 总消耗时间的比值。新生代采用的是复制算法，老年代使用的是标记-整理算法。**
 
-![Parallel Scavenge 收集过程](http://yuko.top:9099/images/2022/03/08/F4928A43F18645A8891088AC5A0BC9C6.jpg)
+![Parallel Scavenge 收集过程](http://images.yuko.top/images/2022/03/08/F4928A43F18645A8891088AC5A0BC9C6.jpg)
 
 Parallel Old 收集器是 Parallel Scavenge 收集器的老年代版本，使用多线程和"标记-整理"算法，在注重吞吐量以及 CPU 资源的场合，都可以优先考虑
 Parallel Scavenge 收集器和 Parallel Old收集器(JDK8默认的新生代和老年代收集器)
@@ -81,7 +81,7 @@ CMS 收集器是由"标记-清除"算法实现的，主要过程分为四个步�
 * 并发清理: 开启用户线程，同时 GC 线程开始对未标记区域做清扫。这个阶段如果有新增对象将会被标记成黑色并不作处理。
 * 并发重置: 重置本次 GC 过程中的标记数据。
 
-![CMS 收集过程](http://yuko.top:9099/images/2022/03/08/E22D67705EE44F509442E7CD3B705910.jpg)
+![CMS 收集过程](http://images.yuko.top/images/2022/03/08/E22D67705EE44F509442E7CD3B705910.jpg)
 
 CMS 收集器的主要优点是 **并发收集、低停顿**。但是它也有几个明显的缺点：
 * 对 CPU 资源敏感(会和服务抢资源)。
@@ -145,7 +145,7 @@ public class ThreeColorRemark {
 }
 ```
 
-![标记过程](http://yuko.top:9099/images/2022/03/08/clipboard-6.png)
+![标记过程](http://images.yuko.top/images/2022/03/08/clipboard-6.png)
 
 
 ### 多标 - 浮动垃圾
@@ -251,7 +251,7 @@ void pre_load_barrier(oop* field) {
 卡表是使用一个字节数组实现的: CARD_TABLE[]，每个元素对应着其标识的内存区域一块特定大小的内存块，称为"卡页"。hotSpot 使用的卡页是 2 ^ 9 大小，即
 512 字节。
 
-![卡表 & 卡页](http://yuko.top:9099/images/2022/03/09/ac2f4c8a417f.jpg)
+![卡表 & 卡页](http://images.yuko.top/images/2022/03/09/ac2f4c8a417f.jpg)
 
 一个卡页可包含多个对象，只要有一个对象的字段存在跨代指针，其对应卡表的元素标识就会变成 1，表示该元素变脏，否则为 0. GC 时，只要筛选本收集区的卡表中
 变脏的元素加入 GCRoots 里。

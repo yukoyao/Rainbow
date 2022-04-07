@@ -3,11 +3,11 @@ JVM 内存模型剖析及优化
 
 ## JVM 整体结构及内存模型
 
-![JVM整体结构及内存模型](http://yuko.top:9099/images/2022/03/03/_20220303150808.png)
+![JVM整体结构及内存模型](http://images.yuko.top/images/2022/03/03/_20220303150808.png)
 
 ## JVM 内存参数设置
 
-![JVM整体结构及内存模型](http://yuko.top:9099/images/2022/03/03/clipboard3.png)
+![JVM整体结构及内存模型](http://images.yuko.top/images/2022/03/03/clipboard3.png)
 
 Spring Boot 程序的 JVM 参数设置格式(Tomcat 启动需要加在 bin 目录下的 catalina.sh 文件里面)：
 

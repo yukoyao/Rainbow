@@ -4,7 +4,7 @@ JVM 对象创建与内存分配机制
 ## 对象的创建
 对象创建的主要过程：
 
-![对象的创建](http://yuko.top:9099/images/2022/03/03/_20220304093702.png)
+![对象的创建](http://images.yuko.top/images/2022/03/03/_20220304093702.png)
 
 ### 1. 类加载检查
 
@@ -55,11 +55,11 @@ new 指令对应到语言层面上来说：new 关键词、对象克隆、对象
 
 **32位对象头**
 
-![32位对象头](http://yuko.top:9099/images/2022/03/04/clipboard-3.png)
+![32位对象头](http://images.yuko.top/images/2022/03/04/clipboard-3.png)
 
 **64位对象头**
 
-![64位对象头](http://yuko.top:9099/images/2022/03/04/clipboard-4.png)
+![64位对象头](http://images.yuko.top/images/2022/03/04/clipboard-4.png)
 
 ### 5. 执行 \<init\> 方法
 
@@ -87,7 +87,7 @@ new 指令对应到语言层面上来说：new 关键词、对象克隆、对象
 
 ## 对象内存分配
 
-![对象内存分配过程](http://yuko.top:9099/images/2022/03/07/327202027172.png)
+![对象内存分配过程](http://images.yuko.top/images/2022/03/07/327202027172.png)
 
 
 ### 对象栈上分配
@@ -249,7 +249,7 @@ GC 期间有发现一次 Minor GC，GC 期间又发现 allocation1 无法存入 
 还是没有足够的空间，存放新的对象就会发生 OOM。当然，如果 Minor GC 之后剩余存活的需要挪动到老年代的对象大小还是大于老年代可用空间，那么也会触发 
 Full GC，Full GC 完以后如果还是没有空间存放 Minor GC 之后的存活对象，则也会发生 OOM。
 
-![老年代空间分配担保机制](http://yuko.top:9099/images/2022/03/08/clipboard-5.png)
+![老年代空间分配担保机制](http://images.yuko.top/images/2022/03/08/clipboard-5.png)
 
 
 ## 对象内存回收
@@ -282,7 +282,7 @@ public class ReferenceCountingGc{
 将 `GC Roots`对象作为起点，从这些节点开始向下搜索引用的对象，找到的对象都标记为 `非垃圾对象`，其余未标记的对象都称为垃圾对象。
 GC Roots 根节点: 线程栈的本地变量、静态变量、本地方法栈的变量等。
 
-![可达性分析算法](http://yuko.top:9099/images/2022/03/08/6E72848C54E84BB7A76F0FF89ED5010D.jpg)
+![可达性分析算法](http://images.yuko.top/images/2022/03/08/6E72848C54E84BB7A76F0FF89ED5010D.jpg)
 
 
 ### 如何判断一个类是无用的类

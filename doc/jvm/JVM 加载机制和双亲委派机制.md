@@ -5,7 +5,7 @@ JVM 加载机制和双亲委派机制
 
 通过 Java 命令执行代码的大致流程如下：
 
-![Java 代码执行过程](http://yuko.top:9099/images/2022/03/01/clipboard.png)
+![Java 代码执行过程](http://images.yuko.top/images/2022/03/01/clipboard.png)
 
 
 类加载过程分为几步：(加载 -> 验证 -> 准备 -> 解析 -> 初始化 -> 使用 -> 卸载)
@@ -67,7 +67,7 @@ public Launcher() {
 
 ### 双亲委派机制
 
-![双亲委派机制](http://yuko.top:9099/images/2022/03/01/clipboard-1.png)
+![双亲委派机制](http://images.yuko.top/images/2022/03/01/clipboard-1.png)
 
 
 含义：加载某个类时会先委托父加载器寻找目标类，找不到再委托上层父加载器加载，如果所有的父加载器在自己的加载类路径下都找不到目标类，则在自己的类加载路径下
@@ -199,7 +199,7 @@ jsp 类加载器。重新创建类加载器，重新加载 jsp 文件。
 
 ### Tomcat 自定义加载器详解
 
-![Tomcat 自定义加载器](http://yuko.top:9099/images/2022/03/01/clipboard-2.png)
+![Tomcat 自定义加载器](http://images.yuko.top/images/2022/03/01/clipboard-2.png)
 
 tomcat 的几个主要类加载器：
 * commonLoader：Tomcat 最基本的类加载器，加载路径中的 class 可以被 Tomcat 容器本身及各个 Webapp 访问。

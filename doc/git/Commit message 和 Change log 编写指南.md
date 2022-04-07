@@ -11,7 +11,7 @@
 $ git log <last tag> HEAD --pretty=format:%s
 ```
 
-![1](http://yuko.top:9099/images/2022/02/18/bg2016010604.png)
+![1](http://images.yuko.top/images/2022/02/18/bg2016010604.png)
 
 2. 可以过滤某些 commit，便于快速查找信息
 
@@ -25,7 +25,7 @@ $ git log <last release> HEAD --grep feature
 
 Change Log 是发布新版本时，用来说明与上一个版本差异的文档。
 
-![2](http://yuko.top:9099/images/2022/02/18/bg2016010603.png)
+![2](http://images.yuko.top/images/2022/02/18/bg2016010603.png)
 
 
 #### Commit message 的格式
@@ -137,4 +137,4 @@ This reverts commit 667ecc1654a317a13331b17617d973392f415f02.
 
 插件名：Git Commit Template
 
-![1](http://yuko.top:9099/images/2022/02/18/image-20210105181008428.png)
+![1](http://images.yuko.top/images/2022/02/18/image-20210105181008428.png)

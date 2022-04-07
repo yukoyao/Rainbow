@@ -5,7 +5,7 @@ Docker 制作精简镜像
 在开始制作镜像之前，首先需要了解下镜像的原理，而这其中最重要的概念就是`镜像层(Layers)`。镜像层依赖于一系列的底层技术，
 比如文件系统(filesystems)、写时复制(copy-on-write)、联合挂载(union mounts)等。
 
-![docker-image-layers](http://yuko.top:9099/images/2022/02/22/202111121641186114969.png)
+![docker-image-layers](http://images.yuko.top/images/2022/02/22/202111121641186114969.png)
 
 总的来说，需要记住的是：
 ```
