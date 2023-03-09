@@ -24,8 +24,6 @@ Rainbow
 
 ## 文档部分
 
----
-
 #####  git 部分
 
 * [Commit message 和 Change log 编写指南](https://github.com/yukoyao/Rainbow/blob/main/doc/git/Commit%20message%20%E5%92%8C%20Change%20log%20%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97.md)
@@ -68,8 +66,6 @@ Rainbow
 
 ## 项目实战部分
 
----
-
 * Redis
     * [使用 Redis BitMap 实现签到功能](https://github.com/yukoyao/Rainbow/blob/main/example/redis-bitmap/README.md)
     * [使用 Redis HyperLogLog 实现 UV 指标采集和展示](https://github.com/yukoyao/Rainbow/blob/main/example/redis-HyperLogLog/README.md)
@@ -91,8 +87,6 @@ Rainbow
 
 
 ## spring-lab
-
----
 
 * lab-benchmark-tomcat-jetty-undertow -  比较 Tomcat、Jetty、undertow 
 * lab-dynamic-datasource -  动态数据源

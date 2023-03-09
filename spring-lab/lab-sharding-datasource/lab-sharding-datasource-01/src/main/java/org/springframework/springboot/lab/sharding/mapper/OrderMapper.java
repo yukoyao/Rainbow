@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface OrderMapper {
 
-    OrderDO selectById(@Param("id") Integer id);
+    OrderDO selectById(@Param("id") Long id);
 
     List<OrderDO> selectListByUserId(@Param("userId") Integer userId);
 
