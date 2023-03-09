@@ -22,7 +22,7 @@ Rainbow
 
 
 
-<div><img src="https://sm.ms/image/edm5qBGfnI3T6gt" border="0" /><font size='5'>&nbsp;&nbsp;文档部分</font></div>
+## 文档部分
 
 ---
 
@@ -66,7 +66,7 @@ Rainbow
 
 
 
-<div><img src="https://sm.ms/image/h3fn6xboN1BmJ4L" border="0" /><font size='5'>&nbsp;&nbsp;项目实战部分</font></div>
+## 项目实战部分
 
 ---
 
@@ -91,7 +91,4 @@ Rainbow
 
 
 
-<div><img src="https://sm.ms/image/IpTE7M9FDyk3iSd" border="0" /><font size='5'>&nbsp;&nbsp;组件部分</font></div>
-
----
 
