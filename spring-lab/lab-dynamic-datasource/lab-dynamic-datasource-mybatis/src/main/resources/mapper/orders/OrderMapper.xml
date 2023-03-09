@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springframework.springboot.lab.dynamicdatasource.mybatis.mapper.orders.OrderMapper">
+
+    <sql id="FIELD">
+        id, user_id
+    </sql>
+
+    <insert id="save" parameterType="OrderDO" >
+        INSERT INTO orders(id, user_id) VALUES (#{id}, #{userId})
+    </insert>
+
+    <select id="selectById" parameterType="Integer" resultType="OrderDO">
+        SELECT
+            <include refid="FIELD"/>
+        FROM orders
+        WHERE id = #{id}
+    </select>
+
+</mapper>

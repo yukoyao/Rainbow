@@ -1,0 +1,20 @@
+spring:
+  # ShardingSphere 配置项
+  shardingsphere:
+    datasource:
+    # 所有数据源的名字
+    name: ds-orders-0, ds-orders-1
+    # 订单 orders 数据源配置 00
+    ds-orders-0:
+      type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.110.100:12001/orders_0?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: root
+    # 订单 orders 数据源配置 01
+    ds-orders-1:
+      type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.110.100:12002/orders_1?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: root

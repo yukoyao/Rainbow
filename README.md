@@ -90,5 +90,15 @@ Rainbow
   * [红包雨业务](https://github.com/yukoyao/Rainbow/blob/main/example/RedPacketRain/README.md)
 
 
+## spring-lab
 
+---
 
+* lab-benchmark-tomcat-jetty-undertow -  比较 Tomcat、Jetty、undertow 
+* lab-dynamic-datasource -  动态数据源
+* lab-kafka -  springboot 与 kafka 集成
+* lab-mybatis - springboot 与 Mybatis 集成
+* lab-sharding-datasource - springboot 与 shardingProxy 集成, 实现数据分片存储
+* lab-spring-data-es - springboot 与 elasticsearch 集成
+* lab-spring-data-mongo - springboot 与 mongodb 集成
+* lab-spring-data-redis - springboot 与 redis 集成

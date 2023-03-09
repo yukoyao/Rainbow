@@ -1,0 +1,8 @@
+spring:
+  # 对应 RedisProperties 类
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    # password:  # Redis 服务器密码, 生产环境必须设置
+    database: 0 # Redis 数据库号 默认是 0
+    timeout: 0 # Redis 连接超时时间, 单位: 毫秒
