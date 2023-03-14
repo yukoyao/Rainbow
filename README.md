@@ -92,7 +92,7 @@ Rainbow
 * lab-dynamic-datasource -  动态数据源
 * lab-kafka -  springboot 与 kafka 集成
 * lab-mybatis - springboot 与 Mybatis 集成
-* lab-sharding-datasource - springboot 与 shardingProxy 集成, 实现数据分片存储
+* lab-sharding-datasource - springboot 与 shardingProxy、shardingJDBC 集成, 实现数据分片存储、读写分离
 * lab-spring-data-es - springboot 与 elasticsearch 集成
 * lab-spring-data-mongo - springboot 与 mongodb 集成
 * lab-spring-data-redis - springboot 与 redis 集成

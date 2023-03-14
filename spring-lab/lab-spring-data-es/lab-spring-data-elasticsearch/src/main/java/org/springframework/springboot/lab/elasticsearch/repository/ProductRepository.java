@@ -7,4 +7,5 @@ import org.springframework.springboot.lab.elasticsearch.dataobject.ESProductDO;
  * @author K
  */
 public interface ProductRepository extends ElasticsearchRepository<ESProductDO, Integer> {
+
 }

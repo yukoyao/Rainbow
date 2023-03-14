@@ -24,6 +24,7 @@
     <module>lab-spring-data-mongo</module>
     <module>lab-dynamic-datasource</module>
     <module>lab-sharding-datasource</module>
+    <module>lab-rabbitmq</module>
   </modules>
 
   <properties>
