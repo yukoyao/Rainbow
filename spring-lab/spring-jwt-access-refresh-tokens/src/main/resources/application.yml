@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      # uri: mongodb://user1:pass1@localhost:27017/?authSource=db1&replicaSet=rs1
+      uri: mongodb://admin:admin@114.132.43.99:27017
+      database: db1
+
+
+accessTokenExpirationMinutes: 5
+refreshTokenExpirationDays: 30
+accessTokenSecret: 12345
+refreshTokenSecret: 54321
