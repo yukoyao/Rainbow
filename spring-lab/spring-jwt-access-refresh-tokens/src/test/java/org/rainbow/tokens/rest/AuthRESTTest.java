@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.rainbow.tokens.dto.LoginDTO;
 import org.rainbow.tokens.dto.SignupDTO;
+import org.rainbow.tokens.dto.TokenDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -53,8 +54,42 @@ public class AuthRESTTest {
     this.mockMvc.perform(post("/api/auth/login")
             .content(objectMapper.writeValueAsString(loginDTO))
             .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
-            .header("accessToken", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NDExOGUzYWZhZWI3NzZkMDE2MzdiMzYiLCJpc3MiOiJNeUFwcCIsImV4cCI6MTY3ODg3MjQyMywiaWF0IjoxNjc4ODcyMTIzfQ.bU46-6KtZWoxryNka2R1Jg1Raom_nny1kD4tAfu16WXxch7a0vjSaMSAuvm3CrFsbRUN8p1xi6DilajbdyhFlw")
-            .header("refreshToken", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NDExOGUzYWZhZWI3NzZkMDE2MzdiMzYiLCJ0b2tlbklkIjoiNjQxMThlM2FmYWViNzc2ZDAxNjM3YjM3IiwiaXNzIjoiTXlBcHAiLCJleHAiOjE2ODE0NjQxMjMsImlhdCI6MTY3ODg3MjEyM30.JWjt9wxN9TgCIGGinsXGOsTtobXM4oJxSaQvFk2kx_zz_GyGi6z7_vvuIQrBEC6MZYVvpEGHPvQ-78cDsUgtiw")
+        ).andDo(print())
+        .andExpect(status().isOk());
+  }
+
+  @Test
+  public void testLogoutAll() throws Exception {
+    TokenDTO tokenDTO = new TokenDTO();
+    tokenDTO.setRefreshToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NDExOGUzYWZhZWI3NzZkMDE2MzdiMzYiLCJ0b2tlbklkIjoiNjQxMjZmYWE0NTU3MzI1MmJkNmQ4NGY2IiwiaXNzIjoiTXlBcHAiLCJleHAiOjE2ODE1MjE4MzQsImlhdCI6MTY3ODkyOTgzNH0.muqJENY2BY8rBdgafBkodMwhM-B2cklWjnPLb5IKhuL8I_ysmctcUGivQP9CKYqZEflQwW_91qISmpAqaoNVAw");
+
+    this.mockMvc.perform(post("/api/auth/logout-all")
+            .content(objectMapper.writeValueAsString(tokenDTO))
+            .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
+        ).andDo(print())
+        .andExpect(status().isOk());
+  }
+
+  @Test
+  public void testAccessToken() throws Exception {
+    TokenDTO tokenDTO = new TokenDTO();
+    tokenDTO.setRefreshToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NDExOGUzYWZhZWI3NzZkMDE2MzdiMzYiLCJ0b2tlbklkIjoiNjQxMjgwYWY4YWU2ODI1YTVlNmYzY2JhIiwiaXNzIjoiTXlBcHAiLCJleHAiOjE2ODE1MjYxOTEsImlhdCI6MTY3ODkzNDE5MX0.jqxt4lEgikFUr-2qSH1ZfA1UzC0PI8xVgDmNsuWTZ_RJVxbQN79i__l93PSRwsVCIlbyni1_XimACfkloi6ibg");
+
+    this.mockMvc.perform(post("/api/auth/access-token")
+            .content(objectMapper.writeValueAsString(tokenDTO))
+            .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
+        ).andDo(print())
+        .andExpect(status().isOk());
+  }
+
+  @Test
+  public void testRefreshToken() throws Exception {
+    TokenDTO tokenDTO = new TokenDTO();
+    tokenDTO.setRefreshToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NDExOGUzYWZhZWI3NzZkMDE2MzdiMzYiLCJ0b2tlbklkIjoiNjQxMjgwYWY4YWU2ODI1YTVlNmYzY2JhIiwiaXNzIjoiTXlBcHAiLCJleHAiOjE2ODE1MjYxOTEsImlhdCI6MTY3ODkzNDE5MX0.jqxt4lEgikFUr-2qSH1ZfA1UzC0PI8xVgDmNsuWTZ_RJVxbQN79i__l93PSRwsVCIlbyni1_XimACfkloi6ibg");
+
+    this.mockMvc.perform(post("/api/auth/refresh-token")
+            .content(objectMapper.writeValueAsString(tokenDTO))
+            .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
         ).andDo(print())
         .andExpect(status().isOk());
   }
