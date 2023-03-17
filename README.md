@@ -76,7 +76,6 @@ Rainbow
     * [使用 Redis GEO 实现附近商家](https://github.com/yukoyao/Rainbow/blob/main/example/redis-geo/README.md)
     * [布隆过滤器的使用](https://github.com/yukoyao/Rainbow/blob/main/example/redis-bloomFilter/README.md)
     * [定时批量数据的上下架(解决缓存击穿问题)](https://github.com/yukoyao/Rainbow/blob/main/example/redis-cache-breakdown/README.md)
-    * [分布式锁解决抢购问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-distributedLock/README.md)
     * [使用 redisson 解决锁丢失问题和缓存续期问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-multi-master/README.md) 
     * [Mysql 和 Redis 的数据一致性问题]()
 
@@ -88,6 +87,7 @@ Rainbow
 
 * 业务场景
   * [红包雨业务](https://github.com/yukoyao/Rainbow/blob/main/example/RedPacketRain/README.md)
+  * [秒杀项目](https://github.com/yukoyao/Rainbow/blob/main/example/seconds-kill/README.md)
 
 
 ## spring-lab

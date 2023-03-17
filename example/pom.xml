@@ -18,12 +18,12 @@
       <module>redis-bloomFilter</module>
       <module>redis-cache-breakdown</module>
       <module>springboot-cicd</module>
-      <module>redis-distributedLock</module>
       <module>springboot-redisson-configuration</module>
       <module>redis-multi-master</module>
       <module>redis-mysql-consistency</module>
       <module>J2Cache-example</module>
       <module>RedPacketRain</module>
+    <module>seconds-kill</module>
   </modules>
 
 </project>

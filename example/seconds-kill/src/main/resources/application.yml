@@ -1,0 +1,45 @@
+spring:
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://114.132.43.99:3306/testdb?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: testdb
+    password: GrsSecjFYKFkfKwY
+    type: com.alibaba.druid.pool.DruidDataSource
+    # Kafka 配置项, 对应 KafkaProperties 配置类
+  kafka:
+    bootstrap-servers: 192.168.110.100:9092
+    # Kafka Producer 配置项
+    producer:
+      acks: 0 # 0 - 不应答。 1 - leader 应答。 all - 所有 leader 和 follower 应答
+      retries: 3 # 发送失败时, 重试发送的次数
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer # 消息的 key 序列化
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer # 消息的 value 序列化
+    # Kafka Consumer 配置项
+    consumer:
+      auto-offset-reset: earliest # 设置消费者分组最初的消费进度为 earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: seconds-kill
+    template:
+      default-topic: SECONDS-KILL-TOPIC
+    # 容器中的线程数，用于提高并发数量
+    listener:
+      concurrency: 3
+
+# redisson 配置
+redisson:
+  address: redis://192.168.110.100:6379
+
+
+# mybatis-plus 配置内容
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto # ID 主键自增
+      logic-delete-value: 1 # 逻辑已删除值(默认为1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为0)
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: org.springframework.springboot.lab.mybatis.plus.dataobject
