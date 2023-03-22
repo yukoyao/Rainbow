@@ -24,6 +24,7 @@
       <module>J2Cache-example</module>
       <module>RedPacketRain</module>
     <module>seconds-kill</module>
+      <module>import-excel-with-image</module>
   </modules>
 
 </project>

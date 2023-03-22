@@ -88,6 +88,7 @@ Rainbow
 * 业务场景
   * [红包雨业务](https://github.com/yukoyao/Rainbow/blob/main/example/RedPacketRain/README.md)
   * [秒杀项目](https://github.com/yukoyao/Rainbow/blob/main/example/seconds-kill/README.md)
+  * [导入含有图片的 Excel](https://github.com/yukoyao/Rainbow/blob/main/example/import-excel-with-image/README.md)
 
 
 ## spring-lab
