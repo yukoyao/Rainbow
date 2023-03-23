@@ -42,7 +42,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class ImportController {
 
 
-  @PostMapping("import")
+  @PostMapping("importGoods")
   public ResponseEntity<?> importExcel(@RequestParam("file") MultipartFile file) throws IOException {
     try {
       InputStream inputStream = file.getInputStream();

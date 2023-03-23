@@ -89,6 +89,7 @@ Rainbow
   * [红包雨业务](https://github.com/yukoyao/Rainbow/blob/main/example/RedPacketRain/README.md)
   * [秒杀项目](https://github.com/yukoyao/Rainbow/blob/main/example/seconds-kill/README.md)
   * [导入含有图片的 Excel](https://github.com/yukoyao/Rainbow/blob/main/example/import-excel-with-image/README.md)
+  * [Mybatis Plus 定义通用 JsonTypeHandler 处理 List<T> 对象的序列化和反序列化](https://github.com/yukoyao/Rainbow/blob/main/example/spring-boot-mybatis-typehandler/README.md)
 
 
 ## spring-lab

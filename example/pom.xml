@@ -25,6 +25,7 @@
       <module>RedPacketRain</module>
     <module>seconds-kill</module>
       <module>import-excel-with-image</module>
+    <module>spring-boot-mybatis-typehandler</module>
   </modules>
 
 </project>
