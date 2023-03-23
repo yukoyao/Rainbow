@@ -6,6 +6,7 @@ import cn.hutool.core.util.StrUtil;
 import org.junit.jupiter.api.Test;
 import org.rainbow.mybatis.entity.bos.GoodsBo;
 import org.rainbow.mybatis.entity.bos.ProgressBo;
+import org.rainbow.mybatis.entity.constants.RequisitionStatusEnum;
 import org.rainbow.mybatis.entity.dos.Requisition;
 import org.rainbow.mybatis.service.RequisitionService;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -39,7 +40,7 @@ public class RequisitionServiceTest {
     requisition.setContactNum("13800000000");
     requisition.setReqTime(new Date());
     requisition.setEta(DateUtil.offsetDay(new Date(), 3));
-    requisition.setStatus(1);
+    requisition.setStatus(RequisitionStatusEnum.PENDING_APPROVAL);
     requisition.setProgress(Arrays.asList(
         new ProgressBo().setApprover("").setTime(new Date()).setStatusText("陈千惠发起请购")));
     requisition.setGoods(Arrays.asList(
@@ -53,7 +54,7 @@ public class RequisitionServiceTest {
 
   @Test
   public void testGetById() {
-    Requisition requisition = requisitionService.getById(9029961927413440559L);
+    Requisition requisition = requisitionService.getById(7528388296505444194L);
     System.out.println(requisition);
   }
 }

@@ -9,8 +9,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.rainbow.mybatis.entity.bos.GoodsBo;
 import org.rainbow.mybatis.entity.bos.ProgressBo;
+import org.rainbow.mybatis.entity.constants.RequisitionStatusEnum;
 import org.rainbow.mybatis.handler.JsonTypeHandler;
 import org.rainbow.mybatis.handler.StringListTypeHandler;
+import org.rainbow.mybatis.handler.UniversalEnumTypeHandler;
 import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 import java.util.List;
@@ -45,7 +47,8 @@ public class Requisition {
   @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
   private Date eta;
 
-  private Integer status;
+  @TableField(typeHandler = UniversalEnumTypeHandler.class)
+  private RequisitionStatusEnum status;
 
   @TableField(typeHandler = JsonTypeHandler.class)
   private List<ProgressBo> progress;
