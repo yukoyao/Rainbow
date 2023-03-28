@@ -13,19 +13,20 @@
   <packaging>pom</packaging>
   <modules>
     <module>redis-bitmap</module>
-      <module>redis-HyperLogLog</module>
-      <module>redis-geo</module>
-      <module>redis-bloomFilter</module>
-      <module>redis-cache-breakdown</module>
-      <module>springboot-cicd</module>
-      <module>springboot-redisson-configuration</module>
-      <module>redis-multi-master</module>
-      <module>redis-mysql-consistency</module>
-      <module>J2Cache-example</module>
-      <module>RedPacketRain</module>
+    <module>redis-HyperLogLog</module>
+    <module>redis-geo</module>
+    <module>redis-bloomFilter</module>
+    <module>redis-cache-breakdown</module>
+    <module>springboot-cicd</module>
+    <module>springboot-redisson-configuration</module>
+    <module>redis-multi-master</module>
+    <module>redis-mysql-consistency</module>
+    <module>J2Cache-example</module>
+    <module>RedPacketRain</module>
     <module>seconds-kill</module>
-      <module>import-excel-with-image</module>
+    <module>import-excel-with-image</module>
     <module>spring-boot-mybatis-typehandler</module>
+    <module>ffmpeg-addwatermark</module>
   </modules>
 
 </project>

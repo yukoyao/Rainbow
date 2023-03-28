@@ -76,8 +76,7 @@ Rainbow
     * [使用 Redis GEO 实现附近商家](https://github.com/yukoyao/Rainbow/blob/main/example/redis-geo/README.md)
     * [布隆过滤器的使用](https://github.com/yukoyao/Rainbow/blob/main/example/redis-bloomFilter/README.md)
     * [定时批量数据的上下架(解决缓存击穿问题)](https://github.com/yukoyao/Rainbow/blob/main/example/redis-cache-breakdown/README.md)
-    * [使用 redisson 解决锁丢失问题和缓存续期问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-multi-master/README.md) 
-    * [Mysql 和 Redis 的数据一致性问题]()
+    * [使用 redisson 解决锁丢失问题和缓存续期问题](https://github.com/yukoyao/Rainbow/blob/main/example/redis-multi-master/README.md)
 
 * Redisson
   * [springboot 2.x 集成 redisson(多种模式配置)](https://github.com/yukoyao/Rainbow/blob/main/example/springboot-redisson-configuration/README.md)
@@ -90,6 +89,7 @@ Rainbow
   * [秒杀项目](https://github.com/yukoyao/Rainbow/blob/main/example/seconds-kill/README.md)
   * [导入含有图片的 Excel](https://github.com/yukoyao/Rainbow/blob/main/example/import-excel-with-image/README.md)
   * [Mybatis Plus 通用 TypeHandler 处理 List<Obj>、枚举](https://github.com/yukoyao/Rainbow/blob/main/example/spring-boot-mybatis-typehandler/README.md)
+  * [使用 ffmpeg 给视频添加水印](https://github.com/yukoyao/Rainbow/blob/main/example/ffmpeg-addwatermask/README.md)
 
 
 ## spring-lab
