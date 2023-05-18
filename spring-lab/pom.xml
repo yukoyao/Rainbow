@@ -25,6 +25,8 @@
     <module>lab-dynamic-datasource</module>
     <module>lab-sharding-datasource</module>
     <module>lab-rabbitmq</module>
+      <module>lab-spring-boot-admin</module>
+      <module>lab-spring-security</module>
   </modules>
 
   <properties>
