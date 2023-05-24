@@ -12,7 +12,8 @@
   <artifactId>lab-spring-security</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>kaptcha</module>
+
+    <module>hello</module>
   </modules>
 
   <properties>
