@@ -1,0 +1,14 @@
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+      "http://mybatis.org/schema/mybatis-3-mapper.dtd">
+<mapper namespace="org.rainbow.security.dynamic.mapper.UserMapper">
+
+  <select id="loadUserByUsername" resultType="org.rainbow.security.dynamic.entity.User">
+    select * from user where username = #{username}
+  </select>
+
+  <select id="getUserRoleByUid" resultType="org.rainbow.security.dynamic.entity.Role">
+    select r.* from role r, user_role ur where ur.uid=#{uid} and ur.rid = r.id
+  </select>
+  
+</mapper>
